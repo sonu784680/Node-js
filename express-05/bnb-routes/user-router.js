@@ -1,0 +1,11 @@
+//external module
+const express = require("express");
+const userRouter = express.Router();
+
+//local module
+const homeController = require("../controllers/home");
+userRouter.get("/homes/:homeId", homeController.gethomeDetails);
+
+userRouter.get("/", homeController.getHome);
+
+module.exports = userRouter;
