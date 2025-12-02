@@ -5,7 +5,7 @@ const path = require("path");
 const express = require("express");
 //local module
 const userRouter = require("./bnb-routes/user-router");
-const { hostRouter, requestItems } = require("./bnb-routes/host-router");
+const hostRouter = require("./bnb-routes/host-router");
 const rootDir = require("./utils/path");
 
 const app = express();
